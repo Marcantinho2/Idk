@@ -1,0 +1,49 @@
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+
+
+# Criar um gráfico com circuitos
+
+fig, ax = plt.subplots(figsize=(7, 5))
+
+
+
+# Definindo o circuito 1 (Parte a)
+
+ax.text(0.1, 0.9, 'Circuito 1 (Corrente Total = 0.6A)', fontsize=14, weight='bold')
+
+ax.text(0.1, 0.8, 'Gerador 10V', fontsize=12)
+
+ax.text(0.1, 0.75, 'R1 (8Ω) - Série', fontsize=12)
+
+ax.text(0.1, 0.7, 'R2 (4Ω) || R3 (5Ω) - Paralelo', fontsize=12)
+
+ax.text(0.1, 0.65, 'R_total = 16.22Ω', fontsize=12)
+
+
+
+# Definindo o circuito 2 (Parte b)
+
+ax.text(0.1, 0.5, 'Circuito 2 (Corrente de 1A em R3)', fontsize=14, weight='bold')
+
+ax.text(0.1, 0.45, 'Gerador 5V', fontsize=12)
+
+ax.text(0.1, 0.4, 'R3 (5Ω) - Série', fontsize=12)
+
+ax.text(0.1, 0.35, 'Outros resistores combinados sem interferir na corrente de R3', fontsize=12)
+
+
+
+# Ajustes no gráfico
+
+ax.axis('off')
+
+plt.title('Diagramas dos Circuitos', fontsize=16)
+
+
+
+# Exibir o gráfico
+
+plt.show()
